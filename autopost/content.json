@@ -1,0 +1,125 @@
+{
+  "start_date": "2026-10-23",
+  "order": ["ar", "pt", "es", "id", "en", "tr", "de"],
+  "post_hour_utc": {"ar": 17, "pt": 22, "es": 1, "id": 12, "en": 23, "tr": 17, "de": 17},
+  "networks": {
+    "ar": ["youtube", "instagram", "facebook"],
+    "en": ["youtube", "instagram", "facebook"],
+    "pt": ["youtube", "instagram"], "es": ["youtube", "instagram"], "id": ["youtube", "instagram"],
+    "tr": ["youtube", "instagram"], "de": ["youtube", "instagram"]
+  },
+  "langs": {
+    "ar": {
+      "cta_line": "⬇️ ابحث في Google Play عن: ملصقات",
+      "hashtags": "#ملصقات #ملصقات_متحركة #ستيكرات #صانع_ملصقات #GIFSticker",
+      "tags": ["ملصقات", "ملصقات متحركة", "ستيكرات", "صانع ملصقات", "ملصق", "صنع ملصقات", "ملصقات مضحكة", "stickers", "gif sticker", "GIF Sticker"],
+      "variants": [
+        {"h1": "حوّل فيديوك", "h2": "إلى ملصق متحرك", "hs": "بثواني بس", "laugh": "ههههههه",
+         "title": "ملصقات متحركة من أي فيديو بثواني 😂 #shorts",
+         "caption": "ملصقات متحركة من فيديوك بثواني 😂 اختر المقطع، شيل الخلفية، اكتب عليه… وملصقك جاهز! مجاني وبدون تسجيل."},
+        {"h1": "ربعك يستاهلون", "h2": "ملصق يضحكهم", "hs": "سوّه بنفسك", "laugh": "يا شيخ!",
+         "title": "سوّ ملصقات مضحكة لربعك من فيديوهاتك 😂 #shorts",
+         "caption": "أضحك موقف صار مع ربعك؟ خلّه ملصق متحرك وأرسله لهم 😂 قص، كتابة بخط عربي، وإزالة الخلفية. مجاني."},
+        {"h1": "صورة قطوتك", "h2": "صارت ملصق متحرك", "hs": "بدون خلفية", "laugh": "مياو!",
+         "title": "ملصقات قطط متحركة من صورك وفيديوهاتك 🐱 #shorts",
+         "caption": "قطوتك تستاهل ملصق خاص فيها 🐱 صوّرها، شيل الخلفية، اكتب اسمها… وصار عندك ملصق متحرك. مجاني وبدون تسجيل."}
+      ]
+    },
+    "pt": {
+      "cta_line": "⬇️ Pesquise no Google Play: figurinhas",
+      "hashtags": "#figurinhas #figurinhasanimadas #stickers #GIFSticker",
+      "tags": ["figurinhas", "figurinhas animadas", "criar figurinhas", "fazer figurinhas", "figurinha", "stickers", "gif sticker", "GIF Sticker"],
+      "variants": [
+        {"h1": "Transforme seu vídeo", "h2": "em figurinha animada", "hs": "em segundos", "laugh": "KKKKKK",
+         "title": "Figurinhas animadas do seu vídeo em segundos 😂 #shorts",
+         "caption": "Figurinhas animadas com qualquer vídeo 😂 Escolha, remova o fundo, escreva… pronto! Grátis e sem cadastro."},
+        {"h1": "Seus amigos merecem", "h2": "uma figurinha sua", "hs": "faça você mesmo", "laugh": "KKKKKK",
+         "title": "Faça figurinhas engraçadas dos seus amigos 😂 #shorts",
+         "caption": "Aquele vídeo engraçado dos amigos vira figurinha animada 😂 Corte, escreva e remova o fundo. Grátis."},
+        {"h1": "Seu gato", "h2": "virou figurinha", "hs": "sem fundo", "laugh": "MIAU!",
+         "title": "Figurinhas de gato animadas com suas fotos 🐱 #shorts",
+         "caption": "Seu pet merece uma figurinha 🐱 Foto ou vídeo, remova o fundo, escreva o nome… pronto! Grátis."}
+      ]
+    },
+    "es": {
+      "cta_line": "⬇️ Busca en Google Play: crear stickers",
+      "hashtags": "#stickers #stickersanimados #crearstickers #GIFSticker",
+      "tags": ["crear stickers", "stickers animados", "hacer stickers", "stickers", "sticker maker", "gif sticker", "GIF Sticker"],
+      "variants": [
+        {"h1": "Convierte tu video", "h2": "en sticker animado", "hs": "en segundos", "laugh": "JAJAJA",
+         "title": "Crear stickers animados con tu video en segundos 😂 #shorts",
+         "caption": "Crea stickers animados con tu video 😂 Elige, quita el fondo, escribe… ¡listo! Gratis y sin registro."},
+        {"h1": "Tus amigos merecen", "h2": "un sticker tuyo", "hs": "hazlo tú mismo", "laugh": "JAJAJA",
+         "title": "Haz stickers graciosos de tus amigos 😂 #shorts",
+         "caption": "Ese video gracioso de tus amigos ahora es sticker animado 😂 Recorta, escribe y quita el fondo. Gratis."},
+        {"h1": "Tu gato", "h2": "ahora es sticker", "hs": "sin fondo", "laugh": "¡MIAU!",
+         "title": "Stickers de gatos animados con tus fotos 🐱 #shorts",
+         "caption": "Tu mascota merece su propio sticker 🐱 Foto o video, quita el fondo y escribe su nombre. Gratis."}
+      ]
+    },
+    "id": {
+      "cta_line": "⬇️ Cari di Google Play: stiker animasi",
+      "hashtags": "#stiker #stikeranimasi #stikerlucu #GIFSticker",
+      "tags": ["stiker animasi", "stiker", "bikin stiker", "stiker lucu", "stiker gif", "sticker maker", "GIF Sticker"],
+      "variants": [
+        {"h1": "Ubah videomu", "h2": "jadi stiker animasi", "hs": "cuma hitungan detik", "laugh": "WKWKWK",
+         "title": "Stiker animasi dari video kamu dalam hitungan detik 😂 #shorts",
+         "caption": "Bikin stiker animasi dari video 😂 Pilih, hapus latar, tulis teks… jadi! Gratis tanpa daftar."},
+        {"h1": "Temanmu layak", "h2": "dapat stiker lucu", "hs": "bikin sendiri", "laugh": "WKWKWK",
+         "title": "Bikin stiker lucu dari video temanmu 😂 #shorts",
+         "caption": "Video kocak bareng teman? Jadikan stiker animasi 😂 Potong, tulis, hapus latar. Gratis."},
+        {"h1": "Kucingmu", "h2": "jadi stiker animasi", "hs": "tanpa latar", "laugh": "MEONG!",
+         "title": "Stiker kucing animasi dari foto kamu 🐱 #shorts",
+         "caption": "Kucingmu pantas punya stiker sendiri 🐱 Foto atau video, hapus latar, tulis namanya. Gratis."}
+      ]
+    },
+    "en": {
+      "cta_line": "⬇️ Search on Google Play: gif sticker maker",
+      "hashtags": "#stickers #animatedstickers #stickermaker #GIFSticker",
+      "tags": ["gif sticker maker", "animated stickers", "sticker maker", "video to sticker", "gif to sticker", "stickers", "GIF Sticker"],
+      "variants": [
+        {"h1": "Turn any video", "h2": "into an animated sticker", "hs": "in seconds", "laugh": "LOL",
+         "title": "Animated stickers from any video in seconds 😂 #shorts",
+         "caption": "Turn any video into an animated sticker 😂 Pick it, remove the background, add text… done! Free, no sign-up."},
+        {"h1": "Your friends deserve", "h2": "their own sticker", "hs": "make it yourself", "laugh": "LMAO",
+         "title": "Make funny stickers of your friends 😂 #shorts",
+         "caption": "That funny clip of your friends? Now it's an animated sticker 😂 Trim, add text, remove the background. Free."},
+        {"h1": "Your cat", "h2": "is now a sticker", "hs": "no background", "laugh": "MEOW!",
+         "title": "Animated cat stickers from your photos 🐱 #shorts",
+         "caption": "Your pet deserves its own sticker 🐱 Photo or video, remove the background, add a name. Free."}
+      ]
+    },
+    "tr": {
+      "cta_line": "⬇️ Google Play'de ara: sticker yapma",
+      "hashtags": "#sticker #stickeryapma #hareketlisticker #GIFSticker",
+      "tags": ["sticker yapma", "hareketli sticker", "sticker", "gif sticker", "sticker maker", "GIF Sticker"],
+      "variants": [
+        {"h1": "Videonu", "h2": "hareketli sticker yap", "hs": "saniyeler içinde", "laugh": "HAHAHA",
+         "title": "Videodan hareketli sticker yapma, saniyeler içinde 😂 #shorts",
+         "caption": "Videonu hareketli sticker yap 😂 Seç, arka planı sil, yazı ekle… hazır! Ücretsiz, kayıt yok."},
+        {"h1": "Arkadaşlarına", "h2": "komik sticker yap", "hs": "kendin tasarla", "laugh": "HAHAHA",
+         "title": "Arkadaşlarına komik sticker yap 😂 #shorts",
+         "caption": "Arkadaşlarınla komik video mu? Hareketli sticker yap 😂 Kes, yaz, arka planı sil. Ücretsiz."},
+        {"h1": "Kedin", "h2": "artık bir sticker", "hs": "arka plansız", "laugh": "MİYAV!",
+         "title": "Fotoğraflarından hareketli kedi stickerı 🐱 #shorts",
+         "caption": "Kedin kendi stickerını hak ediyor 🐱 Fotoğraf ya da video, arka planı sil, adını yaz. Ücretsiz."}
+      ]
+    },
+    "de": {
+      "cta_line": "⬇️ Suche bei Google Play: sticker machen",
+      "hashtags": "#sticker #stickermachen #gifsticker #GIFSticker",
+      "tags": ["sticker machen", "animierte sticker", "sticker erstellen", "gif sticker", "sticker", "GIF Sticker"],
+      "variants": [
+        {"h1": "Mach dein Video", "h2": "zum animierten Sticker", "hs": "in Sekunden", "laugh": "HAHAHA",
+         "title": "Sticker machen aus jedem Video in Sekunden 😂 #shorts",
+         "caption": "Mach aus deinem Video einen animierten Sticker 😂 Wählen, Hintergrund entfernen, Text… fertig! Kostenlos, ohne Anmeldung."},
+        {"h1": "Deine Freunde", "h2": "als lustiger Sticker", "hs": "selbst gemacht", "laugh": "HAHAHA",
+         "title": "Lustige Sticker von deinen Freunden machen 😂 #shorts",
+         "caption": "Das lustige Video mit Freunden wird zum animierten Sticker 😂 Schneiden, Text, Hintergrund weg. Kostenlos."},
+        {"h1": "Deine Katze", "h2": "als Sticker", "hs": "ohne Hintergrund", "laugh": "MIAU!",
+         "title": "Animierte Katzen-Sticker aus deinen Fotos 🐱 #shorts",
+         "caption": "Deine Katze verdient einen eigenen Sticker 🐱 Foto oder Video, Hintergrund entfernen, Namen schreiben. Kostenlos."}
+      ]
+    }
+  }
+}
