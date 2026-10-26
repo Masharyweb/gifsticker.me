@@ -43,12 +43,12 @@
     "lang": "id",
     "title": "Stiker animasi dari video kamu dalam hitungan detik 😂 #shorts",
     "youtube": {
-      "attempts": 2,
+      "attempts": 3,
       "error": "youtube token: {'error': 'invalid_request', 'error_description': 'Missing required parameter: refresh_token'}"
     },
     "instagram": {
-      "attempts": 2,
-      "error": "ig container: {'error': {'message': \"Unsupported post request. Object with ID 'media' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api\", 'type': 'GraphMethodException', 'code': 100, 'error_subcode': 33, 'fbtrace_id': 'Aixj2FqeTOTumYBFavb6vI6'}}"
+      "attempts": 3,
+      "error": "ig container: {'error': {'message': \"Unsupported post request. Object with ID 'media' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api\", 'type': 'GraphMethodException', 'code': 100, 'error_subcode': 33, 'fbtrace_id': 'AFw1YmgArhwqf8YLV3hwKW5'}}"
     }
   }
 }
