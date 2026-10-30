@@ -79,16 +79,16 @@
     "lang": "ar",
     "title": "سوّ ملصقات مضحكة لربعك من فيديوهاتك 😂 #shorts",
     "youtube": {
-      "attempts": 1,
+      "attempts": 2,
       "error": "youtube token: {'error': 'invalid_request', 'error_description': 'Missing required parameter: refresh_token'}"
     },
     "instagram": {
-      "attempts": 1,
-      "error": "ig container: {'error': {'message': \"Unsupported post request. Object with ID 'media' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api\", 'type': 'GraphMethodException', 'code': 100, 'error_subcode': 33, 'fbtrace_id': 'Ar86jbsz1yiazRG7p6j-ILS'}}"
+      "attempts": 2,
+      "error": "ig container: {'error': {'message': \"Unsupported post request. Object with ID 'media' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api\", 'type': 'GraphMethodException', 'code': 100, 'error_subcode': 33, 'fbtrace_id': 'AoOQySuiSTrVvGe31wY55a9'}}"
     },
     "facebook": {
-      "attempts": 1,
-      "error": "fb start: {'error': {'message': \"Unsupported post request. Object with ID 'video_reels' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api\", 'type': 'GraphMethodException', 'code': 100, 'error_subcode': 33, 'fbtrace_id': 'Ab_B778Dru6p0UCXehNUbzj'}}"
+      "attempts": 2,
+      "error": "fb start: {'error': {'message': \"Unsupported post request. Object with ID 'video_reels' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api\", 'type': 'GraphMethodException', 'code': 100, 'error_subcode': 33, 'fbtrace_id': 'AwuBKNq-Cw1n72izQTYft64'}}"
     }
   }
 }
