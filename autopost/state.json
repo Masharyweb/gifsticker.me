@@ -119,12 +119,12 @@
     "lang": "tr",
     "title": "Arkadaşlarına komik sticker yap 😂 #shorts",
     "youtube": {
-      "attempts": 1,
+      "attempts": 2,
       "error": "youtube token: {'error': 'invalid_request', 'error_description': 'Missing required parameter: refresh_token'}"
     },
     "instagram": {
-      "attempts": 1,
-      "error": "ig container: {'error': {'message': \"Unsupported post request. Object with ID 'media' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api\", 'type': 'GraphMethodException', 'code': 100, 'error_subcode': 33, 'fbtrace_id': 'A4E4RHhj_d2qgroqRKxmX1O'}}"
+      "attempts": 2,
+      "error": "ig container: {'error': {'message': \"Unsupported post request. Object with ID 'media' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api\", 'type': 'GraphMethodException', 'code': 100, 'error_subcode': 33, 'fbtrace_id': 'AN6vNgum2w89k1Bfk0YDK_s'}}"
     }
   }
 }
