@@ -194,5 +194,17 @@
       "attempts": 1,
       "error": "fb start: {'error': {'message': \"Unsupported post request. Object with ID 'video_reels' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api\", 'type': 'GraphMethodException', 'code': 100, 'error_subcode': 33, 'fbtrace_id': 'AjPnjQ3Df0qGqEwgveP29rd'}}"
     }
+  },
+  "2026-11-11": {
+    "lang": "tr",
+    "title": "Fotoğraflarından hareketli kedi stickerı 🐱 #shorts",
+    "youtube": {
+      "attempts": 1,
+      "error": "youtube token: {'error': 'invalid_request', 'error_description': 'Missing required parameter: refresh_token'}"
+    },
+    "instagram": {
+      "attempts": 1,
+      "error": "ig container: {'error': {'message': \"Unsupported post request. Object with ID 'media' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api\", 'type': 'GraphMethodException', 'code': 100, 'error_subcode': 33, 'fbtrace_id': 'Ak8qINolwBYX9txNEIjX0_x'}}"
+    }
   }
 }
