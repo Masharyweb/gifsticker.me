@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.whatsappstickers.stickermakerforwhatsapp",
+    "sha256_cert_fingerprints": ["42:73:9C:EF:9C:CF:51:7F:44:0B:F7:CD:56:67:99:12:37:BB:89:B1:C7:2A:3C:A1:9D:52:37:D4:02:3C:72:87"]
+  }
+}]
