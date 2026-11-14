@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>GIF stickers – WhatsApp</title>
+<style>
+:root{--bg:#0f1220;--card:#1a1f35;--fg:#fff;--mut:#aab;--ac:#25d366}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:16px}
+.c{max-width:420px;width:100%;background:var(--card);border-radius:24px;padding:28px 22px;text-align:center}
+.ic{width:88px;height:88px;border-radius:22px;margin:0 auto 14px;background:linear-gradient(135deg,#25d366,#7b5cff);display:flex;align-items:center;justify-content:center;font:800 30px system-ui}
+h1{font-size:24px;margin:6px 0}p{color:var(--mut);margin:6px 0 18px;line-height:1.5}
+ul{list-style:none;padding:0;margin:0 0 22px;text-align:start}li{padding:8px 0;border-bottom:1px solid #ffffff12}
+button{width:100%;border:0;border-radius:14px;padding:16px;font:700 18px system-ui;background:var(--ac);color:#06210f;cursor:pointer}
+button:disabled{opacity:.5}.hp{position:absolute;left:-9999px;opacity:0}small{display:block;color:var(--mut);margin-top:12px}
+</style>
+</head>
+<body>
+<div class="c">
+  <div class="ic">GIF</div>
+  <h1 id="t">Stickers GIF para WhatsApp</h1>
+  <p id="s">Crea stickers animados en segundos</p>
+  <ul id="f"></ul>
+  <input class="hp" id="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <button id="b" disabled>…</button>
+  <small id="n">Gratis · Google Play</small>
+</div>
+<script>
+(function(){
+var PKG="com.whatsappstickers.stickermakerforwhatsapp";
+var T={
+ es:{t:"Stickers GIF para WhatsApp",s:"Crea stickers animados en segundos",f:["✓ Stickers animados de GIF y video","✓ Guardar estados","✓ Fondos animados","✓ Stickers con IA"],b:"Descargar gratis",n:"Gratis · Google Play"},
+ pt:{t:"Figurinhas GIF para WhatsApp",s:"Crie figurinhas animadas em segundos",f:["✓ Figurinhas animadas de GIF e vídeo","✓ Salvar status","✓ Papéis de parede animados","✓ Figurinhas com IA"],b:"Baixar grátis",n:"Grátis · Google Play"},
+ ar:{t:"ملصقات GIF للواتساب",s:"سوّ ملصقات متحركة بثواني",f:["✓ ملصقات متحركة من GIF وفيديو","✓ حفظ الحالات","✓ خلفيات متحركة","✓ ملصقات بالذكاء الاصطناعي"],b:"حمّل مجاناً",n:"مجاني · Google Play"},
+ en:{t:"GIF stickers for WhatsApp",s:"Make animated stickers in seconds",f:["✓ Animated stickers from GIF & video","✓ Status saver","✓ Live wallpapers","✓ AI stickers"],b:"Download free",n:"Free · Google Play"}
+};
+var L=(navigator.language||"es").slice(0,2);var x=T[L]||T.es;
+if(L==="ar"){document.documentElement.dir="rtl";document.documentElement.lang="ar"}
+document.getElementById("t").textContent=x.t;document.getElementById("s").textContent=x.s;
+document.getElementById("n").textContent=x.n;
+var ul=document.getElementById("f");x.f.forEach(function(v){var li=document.createElement("li");li.textContent=v;ul.appendChild(li)});
+var b=document.getElementById("b");b.textContent=x.b;
+
+// --- bot filter ---
+var ua=navigator.userAgent||"",start=Date.now(),human=false,score=0;
+if(navigator.webdriver)score+=5;
+if(/bot|crawl|spider|headless|phantom|selenium|puppeteer|playwright|python|curl|wget/i.test(ua))score+=5;
+if(!/Android/i.test(ua))score+=2;                       // app is Android-only
+if(!("ontouchstart" in window)&&!navigator.maxTouchPoints)score+=2;
+if(screen.width<200||screen.height<200)score+=2;
+["touchstart","pointermove","scroll"].forEach(function(e){addEventListener(e,function(){human=true},{once:true,passive:true})});
+setTimeout(function(){b.disabled=false},1200);          // min dwell 1.2s
+
+var q=new URLSearchParams(location.search);
+var src=(q.get("src")||"direct").replace(/[^\w-]/g,"").slice(0,30);
+var cmp=(q.get("c")||"lp").replace(/[^\w-]/g,"").slice(0,40);
+var ref=encodeURIComponent("utm_source="+src+"&utm_medium=cpi&utm_campaign="+cmp);
+
+b.addEventListener("click",function(ev){
+  var dwell=Date.now()-start;
+  if(document.getElementById("hp").value)score+=10;
+  if(!ev.isTrusted)score+=10;
+  if(dwell<1200)score+=3;
+  if(!human)score+=1;
+  if(score>=5){b.textContent="✓";return;}              // bot: no redirect
+  location.href="https://play.google.com/store/apps/details?id="+PKG+"&referrer="+ref;
+});
+})();
+</script>
+</body>
+</html>
