@@ -6,19 +6,29 @@
 <meta name="robots" content="noindex">
 <title>GIF stickers – WhatsApp</title>
 <style>
-:root{--bg:#0f1220;--card:#1a1f35;--fg:#fff;--mut:#aab;--ac:#25d366}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:16px}
-.c{max-width:420px;width:100%;background:var(--card);border-radius:24px;padding:28px 22px;text-align:center}
-.ic{width:96px;height:96px;border-radius:24px;margin:0 auto 14px;display:block}
-.sh{display:flex;gap:10px;overflow-x:auto;margin:0 -6px 20px;padding:0 6px;scroll-snap-type:x mandatory}
-.sh img{width:150px;height:auto;border-radius:14px;flex:0 0 auto;scroll-snap-align:start;background:#0002}
-h1{font-size:24px;margin:6px 0}p{color:var(--mut);margin:6px 0 18px;line-height:1.5}
-ul{list-style:none;padding:0;margin:0 0 22px;text-align:start}li{padding:8px 0;border-bottom:1px solid #ffffff12}
-button{width:100%;border:0;border-radius:14px;padding:16px;font:700 18px system-ui;background:var(--ac);color:#06210f;cursor:pointer}
-button:disabled{opacity:.5}.hp{position:absolute;left:-9999px;opacity:0}small{display:block;color:var(--mut);margin-top:12px}
+:root{--fg:#fff;--mut:#c7d2fe;--ac:#facc15}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:16px;overflow-x:hidden;
+background:#1e3a8a}
+.bg{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0;background:radial-gradient(circle at 15% 10%,#60a5fa 0,transparent 35%),radial-gradient(circle at 90% 85%,#7c3aed 0,transparent 40%),radial-gradient(circle at 85% 15%,#22d3ee55 0,transparent 30%),linear-gradient(160deg,#1d4ed8 0%,#1e3a8a 55%,#312e81 100%)}
+.chip{position:absolute;display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;background:#ffffff1f;border:1px solid #ffffff33;font:600 15px system-ui;color:#fff;opacity:.55;white-space:nowrap;animation:fl 9s ease-in-out infinite}
+.chip b{font-size:20px}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+.c{position:relative;z-index:1;max-width:420px;width:100%;background:#0f1b4de6;border:1px solid #ffffff26;border-radius:28px;padding:28px 22px;text-align:center;box-shadow:0 20px 60px #0007}
+.ic{width:96px;height:96px;border-radius:24px;margin:0 auto 14px;display:block;box-shadow:0 10px 30px #2563eb88}
+h1{font-size:25px;margin:6px 0}p{color:var(--mut);margin:6px 0 18px;line-height:1.5}
+.sh{display:flex;gap:10px;overflow-x:auto;margin:0 -6px 20px;padding:0 6px 4px;scroll-snap-type:x mandatory;scrollbar-width:none}
+.sh::-webkit-scrollbar{display:none}
+.sh img{width:150px;height:auto;border-radius:16px;flex:0 0 auto;scroll-snap-align:start;box-shadow:0 8px 20px #0006}
+ul{list-style:none;padding:0;margin:0 0 22px;text-align:start}li{padding:9px 0;border-bottom:1px solid #ffffff1a}
+button{width:100%;border:0;border-radius:16px;padding:17px;font:800 18px system-ui;background:linear-gradient(90deg,#facc15,#fde047);color:#1e1b4b;cursor:pointer;box-shadow:0 8px 24px #facc1555}
+button:disabled{opacity:.6}.hp{position:absolute;width:1px;height:1px;opacity:0;overflow:hidden;clip:rect(0 0 0 0);pointer-events:none}small{display:block;color:var(--mut);margin-top:12px}
+@media(max-width:600px){.chip{font-size:13px;padding:8px 12px;opacity:.4}}
 </style>
 </head>
 <body>
+<div class="bg" id="bg"></div>
 <div class="c">
   <img class="ic" src="icon.webp" alt="GIF stickers" width="96" height="96">
   <h1 id="t">Stickers GIF para WhatsApp</h1>
@@ -44,6 +54,13 @@ document.getElementById("t").textContent=x.t;document.getElementById("s").textCo
 document.getElementById("n").textContent=x.n;
 var ul=document.getElementById("f");x.f.forEach(function(v){var li=document.createElement("li");li.textContent=v;ul.appendChild(li)});
 var b=document.getElementById("b");b.textContent=x.b;
+var CH={
+ ar:[["📥","تحميل الحالات"],["🎬","فيديو إلى ستيكر"],["✨","ستيكرات AI"],["🖼","خلفيات متحركة"],["😂","ملصقات GIF"],["✂️","إزالة الخلفية"]],
+ es:[["📥","Guardar estados"],["🎬","Video a sticker"],["✨","Stickers con IA"],["🖼","Fondos animados"],["😂","Stickers GIF"],["✂️","Quitar fondo"]],
+ pt:[["📥","Salvar status"],["🎬","Vídeo em figurinha"],["✨","Figurinhas IA"],["🖼","Papéis animados"],["😂","Figurinhas GIF"],["✂️","Remover fundo"]],
+ en:[["📥","Status saver"],["🎬","Video to sticker"],["✨","AI stickers"],["🖼","Live wallpapers"],["😂","GIF stickers"],["✂️","Remove background"]]};
+var ch=CH[L]||CH.en, pos=[[4,8],[79,7],[2,42],[81,46],[5,78],[79,84]], bg=document.getElementById("bg");
+ch.forEach(function(c,i){var d=document.createElement("div");d.className="chip";d.style.left=pos[i][0]+"%";d.style.top=pos[i][1]+"%";d.style.animationDelay=(i*1.3)+"s";d.innerHTML="<b>"+c[0]+"</b>"+c[1];bg.appendChild(d)});
 var SL=["ar","es","pt","en","tr","id","ru","fr","de","hi","ja","vi"];var sl=SL.indexOf(L)>=0?L:"en";
 var sh=document.getElementById("sh");[1,2,3].forEach(function(i){var im=document.createElement("img");im.src="s/"+sl+"-"+i+".webp";im.alt="";im.loading=i>1?"lazy":"eager";im.width=150;sh.appendChild(im)});
 
