@@ -239,12 +239,12 @@
     "lang": "es",
     "title": "Crear stickers animados con tu video en segundos 😂 #shorts",
     "youtube": {
-      "attempts": 2,
+      "attempts": 3,
       "error": "youtube token: {'error': 'invalid_request', 'error_description': 'Missing required parameter: refresh_token'}"
     },
     "instagram": {
-      "attempts": 2,
-      "error": "ig container: {'error': {'message': \"Unsupported post request. Object with ID 'media' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api\", 'type': 'GraphMethodException', 'code': 100, 'error_subcode': 33, 'fbtrace_id': 'Aw4dAyv6K1dW5oNCJ-A1WwE'}}"
+      "attempts": 3,
+      "error": "ig container: {'error': {'message': \"Unsupported post request. Object with ID 'media' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api\", 'type': 'GraphMethodException', 'code': 100, 'error_subcode': 33, 'fbtrace_id': 'Al2_Dd2yRj6ikETPSYB3Q22'}}"
     }
   }
 }
