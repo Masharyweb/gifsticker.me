@@ -131,6 +131,13 @@ def fb_upload(video, plan):
     return {"id": vid}
 
 UPLOADERS = {"youtube": yt_upload, "instagram": ig_upload, "facebook": fb_upload}
+# A network is skipped (not failed) until all of its secrets are set in GitHub.
+REQUIRED = {"youtube": ("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN"),
+            "instagram": ("IG_USER_ID", "FB_PAGE_TOKEN"),
+            "facebook": ("FB_PAGE_ID", "FB_PAGE_TOKEN")}
+
+def configured(n):
+    return all(os.environ.get(k) for k in REQUIRED.get(n, ()))
 
 # ---------------- main ----------------
 def run(dry=False):
@@ -140,8 +147,10 @@ def run(dry=False):
     if not plan: return 0
     state = jload(STATE, {})
     rec = state.setdefault(plan["key"], {"lang": plan["lang"], "title": plan["title"]})
-    todo = [n for n in plan["networks"]
-            if not rec.get(n, {}).get("ok") and rec.get(n, {}).get("attempts", 0) < MAX_ATTEMPTS]
+    skipped = [n for n in plan["networks"] if not configured(n)]
+    for n in skipped: print(f"{n}: SKIP (secrets not set)")
+    todo = [n for n in plan["networks"] if configured(n)
+            and not rec.get(n, {}).get("ok") and rec.get(n, {}).get("attempts", 0) < MAX_ATTEMPTS]
     if not todo and not dry: print("nothing to do"); return 0
     build_fonts()
     os.environ["FONT_DIR"] = FONT_DIR
