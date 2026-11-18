@@ -18,8 +18,13 @@ HREFLANG = {"tr": "tr", "ar": "ar", "es": "es", "pt": "pt-BR", "id": "id", "de":
 def localize(page, lang):
     src = os.path.join(ROOT, page, "index.html")
     t = open(src, encoding="utf-8").read()
-    tr = json.load(open(os.path.join(ROOT, "tools", "i18n", f"{page}.{lang}.json"), encoding="utf-8"))
+    tr = {}
+    common = os.path.join(ROOT, "tools", "i18n", f"common.{lang}.json")  # nav/footer shared by all pages
+    if os.path.exists(common): tr.update(json.load(open(common, encoding="utf-8")))
+    tr.update(json.load(open(os.path.join(ROOT, "tools", "i18n", f"{page}.{lang}.json"), encoding="utf-8")))
     missing = []
+    for a, b in tr.pop("__raw__", {}).items():  # exact HTML fragments, e.g. words between two links
+        t = t.replace(a, b)
     for en in sorted(tr, key=len, reverse=True):
         loc = tr[en]
         enc_html, loc_html = html.escape(en, quote=False), html.escape(loc, quote=False)
