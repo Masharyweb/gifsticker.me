@@ -11,8 +11,8 @@ import json, re, sys, os, html
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://gifsticker.me"
-PLAY_HL = {"tr": "tr", "ar": "ar", "es": "es", "pt": "pt-BR", "id": "id", "de": "de", "fr": "fr", "it": "it", "ru": "ru", "hi": "hi", "vi": "vi", "th": "th", "ms": "ms", "bn": "bn", "ur": "ur", "fa": "fa"}
-HREFLANG = {"tr": "tr", "ar": "ar", "es": "es", "pt": "pt-BR", "id": "id", "de": "de", "fr": "fr", "it": "it", "ru": "ru", "hi": "hi", "vi": "vi", "th": "th", "ms": "ms", "bn": "bn", "ur": "ur", "fa": "fa"}
+PLAY_HL = {"tr": "tr", "ar": "ar", "es": "es", "pt": "pt-BR", "id": "id", "de": "de", "fr": "fr", "it": "it", "ru": "ru", "hi": "hi", "vi": "vi", "th": "th", "ms": "ms", "bn": "bn", "ur": "ur", "fa": "fa", "ja": "ja", "ko": "ko", "zh": "zh-CN", "zh-tw": "zh-TW", "pl": "pl", "uk": "uk", "nl": "nl", "ro": "ro", "el": "el", "cs": "cs"}
+HREFLANG = {"tr": "tr", "ar": "ar", "es": "es", "pt": "pt-BR", "id": "id", "de": "de", "fr": "fr", "it": "it", "ru": "ru", "hi": "hi", "vi": "vi", "th": "th", "ms": "ms", "bn": "bn", "ur": "ur", "fa": "fa", "ja": "ja", "ko": "ko", "zh": "zh-Hans", "zh-tw": "zh-Hant", "pl": "pl", "uk": "uk", "nl": "nl", "ro": "ro", "el": "el", "cs": "cs"}
 
 
 def localize(page, lang):
