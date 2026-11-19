@@ -11,8 +11,8 @@ import json, re, sys, os, html
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://gifsticker.me"
-PLAY_HL = {"tr": "tr", "ar": "ar", "es": "es", "pt": "pt-BR", "id": "id", "de": "de"}
-HREFLANG = {"tr": "tr", "ar": "ar", "es": "es", "pt": "pt-BR", "id": "id", "de": "de"}
+PLAY_HL = {"tr": "tr", "ar": "ar", "es": "es", "pt": "pt-BR", "id": "id", "de": "de", "fr": "fr", "it": "it", "ru": "ru", "hi": "hi", "vi": "vi", "th": "th", "ms": "ms", "bn": "bn", "ur": "ur", "fa": "fa"}
+HREFLANG = {"tr": "tr", "ar": "ar", "es": "es", "pt": "pt-BR", "id": "id", "de": "de", "fr": "fr", "it": "it", "ru": "ru", "hi": "hi", "vi": "vi", "th": "th", "ms": "ms", "bn": "bn", "ur": "ur", "fa": "fa"}
 
 
 def localize(page, lang):
@@ -37,7 +37,7 @@ def localize(page, lang):
             t = t.replace(f">{en} ", f">{loc} "); n = 1
         if not n: missing.append(en)
     url_en, url_loc = f"{SITE}/{page}/", f"{SITE}/{lang}/{page}/"
-    t = re.sub(r'<html lang="[^"]*"', f'<html lang="{lang}"' + (' dir="rtl"' if lang == "ar" else ""), t, count=1)
+    t = re.sub(r'<html lang="[^"]*"', f'<html lang="{lang}"' + (' dir="rtl"' if lang in ("ar", "ur", "fa") else ""), t, count=1)
     t = t.replace(f'<link rel="canonical" href="{url_en}">', f'<link rel="canonical" href="{url_loc}">')
     t = t.replace(f'<meta property="og:url" content="{url_en}">', f'<meta property="og:url" content="{url_loc}">')
     t = t.replace(f'"{url_en}"', f'"{url_loc}"').replace(f'"@id":"{url_en}', f'"@id":"{url_loc}')
